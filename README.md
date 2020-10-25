@@ -6,13 +6,6 @@ Check out my work and contact information at https://dcharney.github.io/dcharney
 
 
 
-
-    *Technically minded and a creative thinker interested in pushing the envelope of engineering. Works well in high stress environments where required to problem solve with limited time and resources.
-
-    Strong communication skills developed through managing high risk technical projects and facilitating cross discipline communication. Experience writing, executing, and witnessing tests for FAT, SAT, and other commissioning activities. Familiar with American and European design standards.*
-
-
-
 <!--
 **dcharney/dcharney** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
