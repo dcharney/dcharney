@@ -1,9 +1,15 @@
-### Challenge 2: Professional Portfolio
+### Delaney Charney
+
+*Technically minded and a creative thinker interested in pushing the envelope of engineering. Works well in high stress environments where required to problem solve with limited time and resources.
+Strong communication skills developed through managing high risk technical projects and facilitating cross discipline communication. Experience writing, executing, and witnessing tests for FAT, SAT, and other commissioning activities. Familiar with American and European design standards.*
+
+
+Please visit: https://dcharney.github.io/dcharney/ to view project samples.
 
 <!--
 **dcharney/dcharney** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
--->
-My full professional portfolio can be viewed at: https://dcharney.github.io/dcharney/
+
+### Challenge Assignment #2: Professional Portfolio
 
 This webpage was built by Delaney Charney for Challenge Assignment No.2 of the UCF Coding Bootcamp. The requirements for the assignment are detailed below.
 
@@ -63,3 +69,5 @@ This challenge is graded based on the following criteria:
     Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
     Repository contains multiple descriptive commit messages.
     Repository contains quality README file with description, screenshot, and link to deployed application.
+
+-->
