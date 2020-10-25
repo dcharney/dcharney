@@ -1,0 +1,62 @@
+/*** main style sheet for dcharney repo ***/
+
+
+/* root declarations */
+
+:root {
+    --primary-color: #ccccc ;
+    --secondary-color: #17555c;
+    --tertiary-color: #39a6b2;
+    --accent-color: #8f741d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/** splash page styles **/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: visible;
+}
+
+.background-img {
+    background-image: url(https://via.placeholder.com/150/2d3a3d/17555c);
+    background-size: cover;
+}
+
+.main-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.main-title span {
+    font-size: 10vw;
+    color: var(--tertiary-color);
+    text-shadow: 0 0 7px var(--tertiary-color);
+    font-family: Jazz LET, fantasy;
+    font-weight: lighter;
+}
+
+.title-letter:hover {
+    color: var(--tertiary-color);
+    text-shadow: 0 0 12px whitesmoke;
+    font-size: 15vw;
+    transition-duration: 0.5s ;
+    justify-content: center;
+}
+
+.space {
+    margin-right: 2vw;
+}
+
