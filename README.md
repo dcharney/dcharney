@@ -3,7 +3,7 @@
 <!--
 **dcharney/dcharney** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 -->
-My full professional portfolio can be viewed at: 
+My full professional portfolio can be viewed at: https://dcharney.github.io/dcharney/
 
 This webpage was built by Delaney Charney for Challenge Assignment No.2 of the UCF Coding Bootcamp. The requirements for the assignment are detailed below.
 
