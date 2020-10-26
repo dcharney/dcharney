@@ -4,10 +4,11 @@
 /* root declarations */
 
 :root {
-    --primary-color: #ccccc ;
-    --secondary-color: #17555c;
-    --tertiary-color: #39a6b2;
+    --dark-main: #1b383b ;
+    --main: #17555c;
+    --light-main: #39a6b2;
     --accent-color: #8f741d;
+    --light-text: whitesmoke
 }
 
 * {
@@ -16,41 +17,48 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/** splash page styles **/
+section {
+    padding-top: 100px;
+    padding-bottom: 100px ;
+    padding-right: 20vw;
+}
 
-header {
+/** start of splash page styles **/
+
+.splash {
+    background-image: url(https://via.placeholder.com/150/2d3a3d/17555c);
+    background-size: cover;
+
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
     position: absolute;
-    overflow: visible;
-}
-
-.background-img {
-    background-image: url(https://via.placeholder.com/150/2d3a3d/17555c);
-    background-size: cover;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .main-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    width: 100%;
+    margin-bottom: 5%;
+    height: 10vw;
 }
 
 .main-title span {
     font-size: 10vw;
-    color: var(--tertiary-color);
-    text-shadow: 0 0 7px var(--tertiary-color);
+    color: var(--main);
+    text-shadow: 0 0 10px var(--light-main);
     font-family: Jazz LET, fantasy;
     font-weight: lighter;
 }
 
 .title-letter:hover {
-    color: var(--tertiary-color);
-    text-shadow: 0 0 12px whitesmoke;
+    color: var(--light-main);
+    text-shadow: 0 0 12px var(--light-text);
     font-size: 15vw;
     transition-duration: 0.5s ;
     justify-content: center;
@@ -60,3 +68,96 @@ header {
     margin-right: 2vw;
 }
 
+.enter-bttn {
+    background-color: var(--main);
+    box-shadow: 0 0 15px var(--light-main);
+    border: none;
+    color: var(--light-text);
+    padding: 10px 20px;
+    font-style: normal;
+    font-size: 2vw;
+    border-radius: 5px;
+    height: fit-content;
+    font-family: Jazz LET, fantasy;
+    letter-spacing: .1em;
+}
+
+.enter-bttn:hover {
+    box-shadow: 0 0 15px var(--light-text);
+    font-size: 3vw;
+    transition-duration: 0.25s;
+}
+
+header div {
+    /** prevents shift of main title when button grows **/
+    height: 10vw;
+    display: flex;
+    align-items: center;
+}
+
+/** end of splash page styles **/
+
+/** start of home page styles **/
+
+.home {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-image: url(https://via.placeholder.com/150/2d3a3d/17555c);
+    background-size: cover;
+}
+
+.home h1 {
+    margin: 10vw;
+}
+
+nav {
+    position: fixed;
+    right: 2vw;
+    background: rgba(143, 116, 29, .5);
+    padding: 10px;
+    box-shadow: 0 0 5px var(--light-text);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+header nav a {
+    color: var(--light-main);
+    text-decoration: none;
+    font-weight: bold;
+    outline: 1px solid var(--light-text);
+}
+
+/** start bio section **/
+
+.bio {
+    background: var(--main);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bio-img{
+    margin: 10px 50px;
+    border: 5px solid var(--accent-color);
+}
+
+.bio-content {
+    color: var(--light-text);
+    height: 80%;
+    margin: 20px;
+}
+
+/** end bio section **/
+
+/** start portfolio section **/
+
+
+
+
+
+/** end portfolio section **/
