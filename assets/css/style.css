@@ -18,7 +18,7 @@
 }
 
 section {
-    padding: 15vh 15vw 15vh 8vw;
+    padding: 7vh 15vw 7vh 8vw;
 }
 
 /** start of splash page styles **/
@@ -137,6 +137,7 @@ header nav a {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    height: 50vh;
 }
 
 .bio-img{
@@ -148,6 +149,9 @@ header nav a {
     color: var(--light-text);
     height: 80%;
     margin: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 /** end bio section **/
@@ -265,15 +269,16 @@ header nav a {
 
 /** end portfolio section **/
 
+/** start contact section **/
 .contact {
     background: var(--main);
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+/**end contact section **/
 
-
-/** footer **/
+/** start footer **/
 
 footer {
     display: flex;
@@ -283,3 +288,5 @@ footer {
     align-items: center;
     flex-wrap: wrap;
 }
+
+/** end footer **/
