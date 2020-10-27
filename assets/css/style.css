@@ -170,8 +170,10 @@ header nav a {
 .project-1 {
     grid-column: 1/6;
     grid-row: 1/4;
-    background-image: url(https://via.placeholder.com/150/2d3a3d/17555c);
-    background-size: cover;
+    /*background-image: url(../images/run-buddy.JPG);
+    background-size: cover;*/
+    background-color: transparent;
+    perspective: 1000px;
 }
 
 .project-2 {
@@ -232,7 +234,8 @@ header nav a {
 footer {
     display: flex;
     background: var(--accent-color);
-    height: 100px;
+
     justify-content: flex-end;
     align-items: center;
+    flex-wrap: wrap;
 }
