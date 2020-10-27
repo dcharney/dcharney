@@ -72,7 +72,6 @@ section {
     border: none;
     color: var(--light-text);
     padding: 10px 20px;
-    font-style: normal;
     font-size: 2vw;
     border-radius: 5px;
     height: fit-content;
@@ -110,6 +109,13 @@ header div {
     margin: 10vw;
 }
 
+.home h1 a {
+    color: var(--light-main);
+    text-shadow: 0 0 12px var(--light-text);
+    font-size: 10vw;
+    text-decoration: none;
+}
+
 nav {
     position: fixed;
     right: 2vw;
@@ -121,6 +127,7 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     border-radius: 5px;
+    z-index: 999;
 }
 
 header nav a {
@@ -140,18 +147,28 @@ header nav a {
     height: 50vh;
 }
 
-.bio-img{
-    margin: 10px 50px;
+.bio-img {
+    width: 30vw;
+    height: 30vw;
     border: 5px solid var(--accent-color);
+    overflow: hidden;
+}
+
+.bio-img img {
+    width: 100%;
 }
 
 .bio-content {
     color: var(--light-text);
     height: 80%;
-    margin: 20px;
+    width: 40vw;
     justify-content: center;
     display: flex;
     flex-direction: column;
+}
+
+.bio-content p {
+    margin-top: 1vh;
 }
 
 /** end bio section **/
@@ -290,3 +307,63 @@ footer {
 }
 
 /** end footer **/
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    .home {
+        justify-content: center;
+    }
+
+    .home h1 {
+        display: flex;
+    }
+
+    .home h1 a {
+        text-align: center;
+        font-size: 14vw;
+    }
+    
+    nav {
+        position: fixed;
+        top: 20px;
+        flex-direction: row;
+        height: auto;
+        width: 90%;
+    }
+
+    section {
+        padding: 7vh 8vw 7vh 8vw;
+    }
+
+    .portfolio-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    .project-1, .project-2, .project-3, .project-4, .project-5, .project-6, .project-7 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .bio {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .bio-img {
+        width: 50vw;
+        height: 50vw;
+    }
+    .bio-content {
+        width: 90%;
+        font-size: 15px;
+    }
+}
