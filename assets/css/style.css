@@ -8,7 +8,7 @@
     --main: #17555c;
     --light-main: #39a6b2;
     --accent-color: #8f741d;
-    --light-text: whitesmoke
+    --light-text: whitesmoke;
 }
 
 * {
@@ -122,19 +122,32 @@ nav {
     background: rgba(143, 116, 29, .5);
     padding: 10px;
     box-shadow: 0 0 5px var(--light-text);
-    height: 60vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     border-radius: 5px;
     z-index: 999;
 }
 
-header nav a {
+nav p {
+    text-align: center;
+    color:  rgba(245,245,245,.5);
+    margin: 3.5vh auto 3.5vh auto;
+    font-size: 20px;
+}
+
+.nav-content {
     color: var(--light-main);
     text-decoration: none;
     font-weight: bold;
-    outline: 1px solid var(--light-text);
+    border-bottom: 1px solid rgba(245,245,245,.5);
+    text-align: right;
+    font-size: 15px;
+}
+
+.nav-content:hover {
+    text-shadow: 0 0 1px var(--light-text);
 }
 
 /** start bio section **/
@@ -329,6 +342,15 @@ footer {
         flex-direction: row;
         height: auto;
         width: 90%;
+        justify-content: space-around;
+    }
+
+    nav p {
+        display: none;
+    }
+
+    .nav-content {
+        font-size: 2.5vw;
     }
 
     section {
