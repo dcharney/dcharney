@@ -130,11 +130,12 @@ nav {
     z-index: 999;
 }
 
-nav p {
+nav p, .scroll-to-top, .scroll-to-bottom {
     text-align: center;
     color:  rgba(245,245,245,.5);
     margin: 3.5vh auto 3.5vh auto;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .nav-content {
@@ -337,7 +338,7 @@ footer {
     }
     
     nav {
-        position: fixed;
+        right: auto;
         top: 20px;
         flex-direction: row;
         height: auto;
@@ -345,7 +346,7 @@ footer {
         justify-content: space-around;
     }
 
-    nav p {
+    nav p, .scroll-to-top, .scroll-to-bottom {
         display: none;
     }
 
