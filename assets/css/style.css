@@ -5,8 +5,8 @@
 
 :root {
     --dark-main: #1b383b ;
-    --main: #17555c;
-    --light-main: #39a6b2;
+    --main: #002C72;
+    --light-main: #5CF8FF;
     --accent-color: #8f741d;
     --light-text: whitesmoke;
 }
@@ -24,7 +24,8 @@ section {
 /** start of splash page styles **/
 
 .splash {
-    background-image: url(https://via.placeholder.com/150/2d3a3d/17555c);
+    /*background-image: url(https://via.placeholder.com/150/2d3a3d/17555c);*/
+    background-image: url(../images/20201029_Sample_noname.png);
     background-size: cover;
 
     display: flex;
