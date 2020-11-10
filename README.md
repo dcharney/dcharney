@@ -4,10 +4,6 @@
 
 Check out my work and contact information at https://dcharney.github.io/dcharney/!
 
-![Image of Dcharney REF](./assets/images/splash-screenshot.png)
-
-![Image of horiseon REF](./assets/images/home-screenshot.png)
-
 
 
 <!--
