@@ -15,9 +15,22 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+}
+
+main {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 section {
+    position: relative;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+#portfolio {
     padding: 7vh 15vw 7vh 8vw;
 }
 
@@ -98,58 +111,74 @@ header div {
 /** start of home page styles **/
 
 .home {
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    background-image: url(https://via.placeholder.com/150/2d3a3d/17555c);
+    background-image: url("../images/beach-2.jpg");
     background-size: cover;
 }
 
 .home h1 {
-    margin: 10vw;
+    margin: 12vh 0 0 22vw;
 }
 
 .home h1 a {
-    color: var(--light-main);
+    color: black;
     text-shadow: 0 0 12px var(--light-text);
-    font-size: 10vw;
+    font-size: 6vw;
     text-decoration: none;
+    white-space: nowrap;
+    font-family: 'Permanent Marker', cursive;
 }
 
-nav {
-    position: fixed;
-    right: 2vw;
-    background: rgba(143, 116, 29, .5);
-    padding: 10px;
-    box-shadow: 0 0 5px var(--light-text);
-    height: 40vh;
+.home h1 a:hover {
+    text-shadow: 0 0 12px var(--light-main);
+}
+
+#top {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    border-radius: 5px;
-    z-index: 999;
 }
 
-nav p, .scroll-to-top, .scroll-to-bottom {
+#navbar {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    border-radius: 0 0 25px 25px;
+    z-index: 999;
+    width: 80vw;
+    position: fixed;
+    top: 0;
+    transition: top 0.7s;
+}
+
+#navbar:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#navbar p, .scroll-to-top, .scroll-to-bottom {
     text-align: center;
     color:  rgba(245,245,245,.5);
-    margin: 3.5vh auto 3.5vh auto;
+    margin: 1vh auto;
     font-size: 20px;
     text-decoration: none;
 }
 
 .nav-content {
-    color: var(--light-main);
+    color: black;
     text-decoration: none;
     font-weight: bold;
-    border-bottom: 1px solid rgba(245,245,245,.5);
     text-align: right;
-    font-size: 15px;
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px var(--light-text);
+    font-family: 'Permanent Marker', cursive;
 }
 
 .nav-content:hover {
-    text-shadow: 0 0 1px var(--light-text);
+    text-shadow: 0 0 1px #ff7f68;
 }
 
 /** start bio section **/
