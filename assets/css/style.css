@@ -275,6 +275,10 @@ nav p, .scroll-to-top, .scroll-to-bottom {
     filter: brightness(25%);
 }
 
+.project-3 .flip-card-back img {
+    filter: brightness(50%);
+}
+
 .flip-card-front {
     background-color: #bbb;
     color: black;
